@@ -1,0 +1,21 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "DxV Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "sky",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Sky 2",
+	Callback = function()
+
+        ["SkyboxBk"] = "rbxassetid://252760981",
+        ["SkyboxDn"] = "rbxassetid://252763035",
+        ["SkyboxFt"] = "rbxassetid://252761439",
+        ["SkyboxLf"] = "rbxassetid://252760980",
+        ["SkyboxRt"] = "rbxassetid://252760986",
+        ["SkyboxUp"] = "rbxassetid://252762652"
+
+OrionLib:Init()
